@@ -1,0 +1,27 @@
+.my-footer {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.my-row-sm-col {
+  display: flex;
+  align-items: center;
+}
+
+.my-margin-left { margin-left: 5px; }
+.my-margin-right { margin-right: 5px; }
+.my-margin-top { margin-top: 5px; }
+.my-margin-bottom { margin-bottom: : 5px; }
+
+@media screen and (max-width: 640px) {
+  .my-row-sm-col {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  .my-row-sm-col .badge {
+    margin-top: 1px;
+  }
+}
