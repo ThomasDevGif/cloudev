@@ -1,9 +1,14 @@
-.my-text-accent {
-  color: #ee6e73;
-}
+.my-text-accent { color: #ee6e73; }
+
+.my-card-subtitle { color: #9E9E9E; }
 
 .my-footer {
   height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.my-row {
   display: flex;
   align-items: center;
 }

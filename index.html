@@ -26,56 +26,25 @@
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="cloudev.fr/css/style.css"/>
   <link type="text/css" rel="stylesheet" href="cloudev.fr/css/materialize.css"  media="screen,projection"/>
-  <!-- Fontawesome -->
-  <link rel='stylesheet prefetch' href='http:////netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
-
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
   <!-- CDNs -->
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </head>
 
 <body class="blue-grey darken-1">
   <!-- Navbar -->
-  <div class="navbar-fixed">
-    <nav class="nav-extended">
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Cloudev.fr</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="https://www.linkedin.com/in/thomas-tournoux-35a87115b/" target="_blank">Linked IN</a></li>
-          <li><a href="https://github.com/ThomasDevGif" target="_blank">GitHub</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+  <div id="NavbarComponent"></div>
   <!-- Sidenav -->
   <div id="SidenavComponent"></div>
-
-  <div class="parallax-container">
-    <div class="parallax"><img src="cloudev.fr/images/web-development.jpg"></div>
-  </div>
-  <div class="section white">
-    <div class="row container">
-      <h2 class="header">Bienvenue sur cloudev.fr</h2>
-      <p class="grey-text text-darken-3 lighten-3">Développé avec ♡ par <span class="my-text-accent">Thomas Tournoux<span></p>
-    </div>
-  </div>
-  <div class="parallax-container">
-    <div class="parallax"><img src="cloudev.fr/images/web-development.jpg"></div>
-  </div>
+  <!-- Parallax home -->
+  <div id="ParallaxHomeComponent"></div>
 
   <div class="row">
     <div class="col m2"></div>
     <div class="col m8 s12">
-
+      <!-- Profile -->
+      <div id="ProfileComponent"></div>
       <!-- My sites -->
       <div id="MySitesComponent"></div>
-
     </div>
     <div class="col m2"></div>
   </div>
@@ -89,15 +58,13 @@
   <!--JavaScript at end of body for optimized loading-->
   <script type="text/javascript" src="cloudev.fr/js/materialize.min.js"></script>
   <script>
-  var elem = document.querySelector('.parallax');
-  var instance = M.Parallax.init(elem, null);
-
   $( document ).ready(function() {
     // Load html pages
+    $("#NavbarComponent").load("cloudev.fr/components/navbar/navbar.html");
     $("#SidenavComponent").load("cloudev.fr/components/sidenav/sidenav.html");
+    $("#ParallaxHomeComponent").load("cloudev.fr/components/parallax-home/parallax-home.html");
+    $("#ProfileComponent").load("cloudev.fr/components/profile/profile.html");
     $("#MySitesComponent").load("cloudev.fr/components/my-sites/my-sites.html");
-    // Init js
-    $('.parallax').parallax();
   });
   </script>
 </body>
