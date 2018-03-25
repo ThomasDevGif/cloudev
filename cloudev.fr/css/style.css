@@ -2,6 +2,7 @@
 
 .my-card-subtitle { color: #9E9E9E; }
 
+/** Layout */
 .my-footer {
   height: 50px;
   display: flex;
@@ -15,6 +16,12 @@
 
 .my-row-sm-col {
   display: flex;
+  align-items: center;
+}
+
+.my-row-between {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -33,4 +40,6 @@
   .my-row-sm-col .badge {
     margin-top: 1px;
   }
+
+  .hide-sm { display: none; }
 }
