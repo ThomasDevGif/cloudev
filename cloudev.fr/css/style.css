@@ -1,6 +1,8 @@
-.my-text-accent { color: #ee6e73; }
-
 .my-card-subtitle { color: #9E9E9E; }
+
+.my-pointer {
+  cursor: pointer;
+}
 
 /** Layout */
 .my-footer {
