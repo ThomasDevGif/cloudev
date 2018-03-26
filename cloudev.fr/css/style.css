@@ -1,7 +1,9 @@
-.my-card-subtitle { color: #9E9E9E; }
-
 .my-pointer {
   cursor: pointer;
+}
+
+.my-card-horizontal {
+  min-height: 170px;
 }
 
 /** Layout */
