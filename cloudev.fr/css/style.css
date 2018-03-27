@@ -1,3 +1,7 @@
+p {
+  text-align: justify;
+}
+
 .my-pointer {
   cursor: pointer;
 }
@@ -6,11 +10,19 @@
   min-height: 170px;
 }
 
+.my-fab-top {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+  margin-bottom: -25px;
+}
+
 /** Layout */
 .my-footer {
   height: 50px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .my-row {
@@ -50,4 +62,8 @@
   }
 
   .hide-sm { display: none; }
+
+  .my-footer {
+    justify-content: flex-start;
+  }
 }
