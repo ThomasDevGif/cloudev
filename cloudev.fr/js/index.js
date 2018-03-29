@@ -9,4 +9,17 @@ $( document ).ready(function() {
   $("#DiplomasComponent").load("cloudev.fr/components/profile/diplomas/diplomas.html");
   $("#ExperiencesComponent").load("cloudev.fr/components/profile/experiences/experiences.html");
   $("#MySitesComponent").load("cloudev.fr/components/my-sites/my-sites.html");
+
+  // Scroll to profile
+  var profile = $('#profile');
+  $('#ParallaxHomeComponent').click(function() {
+    document.getElementById('profile').scrollIntoView({block: 'start', behavior: 'smooth'});
+  })
+
+  // Scroll to top
+  var body = $("html, body");
+  $('#fabToTop').click(function() {
+    body.stop().animate({scrollTop: 0}, 500, 'swing');
+  })
+
 });
